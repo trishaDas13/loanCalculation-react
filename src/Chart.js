@@ -20,8 +20,8 @@ import { Pie } from "react-chartjs-2";
             {
             label: "Ratio of Principle and Interest",
             data: [homeValue, totalInterestGenerated],
-            backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)"],
-            borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+            backgroundColor: ["rgba(22, 255, 0, 0.4)", "rgba(208, 212, 202, 0.4)"],
+            borderColor: ["rgba(22, 255, 0, 1)", "rgba(208, 212, 202, 1)"],
             borderWidth: 2,
             },
         ],

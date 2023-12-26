@@ -6,3 +6,108 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+#root{
+  color: rgba(250, 235, 215, 0.726);
+  background-color: #404258;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.App{
+  width: 100%;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.slider{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none; 
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 16px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #bdf3bb;
+  border-radius: 16px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none; 
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #36d606;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #36d606;
+}
+.value_amount{
+  font-size: 28px;
+  font-weight: 700;
+}
+.rangeValue{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+label{
+  color: #36d606;
+  font-size: 18px;
+}
+.pieChart{
+  width: 30%;
+  text-align: center;
+}
+.pieChart h1{
+  margin-bottom: 1rem;
+  color: #36d606;
+}
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: #bdf3bb;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 700;
+}
+option {
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.281);
+  font-weight: 700;
+}
+.tenure{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.tenure label{
+  font-size: 20px;
+  font-weight: 700;
+}
